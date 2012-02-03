@@ -1,0 +1,574 @@
+{
+         "id": "35C2706B-9C66-4F47-B820-2E8A734D2CC2",
+         "name": "Cufflinks Transcript Quantification and Assembly",
+         "description": "",
+         "component_id": "c0ad5fa97187948f79b1b82cb2abcf623",
+         "component": "cufflinks",
+         "TYPE": "",
+         "refs": [],
+         "tito": "35C2706B-9C66-4F47-B820-2E8A734D2CC2",
+         "edited_date": "",
+         "published_date": "",
+         "groups": {
+                  "id": "--root-PropertyGroupContainer--",
+                  "name": "",
+                  "label": "Cufflinks Transcript Quantification and Assembly",
+                  "description": "",
+                  "type": "",
+                  "isVisible": true,
+                  "groups": [
+                           {
+                                    "id": "8475A7CF-3598-4980-B9FA-C12E63835856",
+                                    "name": "Select data:",
+                                    "label": "Select input data",
+                                    "description": "",
+                                    "type": "step",
+                                    "isVisible": true,
+                                    "groups": [],
+                                    "properties": [
+                                             {
+                                                      "id": "654CD9C8-0C74-40EB-870A-2B86E2244D0A",
+                                                      "name": "",
+                                                      "label": "Select Input SAM/BAM file",
+                                                      "description": "",
+                                                      "type": "Input",
+                                                      "isVisible": true,
+                                                      "value": "",
+                                                      "order": 2,
+                                                      "omit_if_blank": false,
+                                                      "data_object": {
+                                                               "id": "715F99DA-5839-4AA3-A6B1-9869F2558D55",
+                                                               "name": "Select Input SAM/BAM file",
+                                                               "label": "Select Input SAM/BAM file",
+                                                               "description": "",
+                                                               "type": "Input",
+                                                               "isVisible": true,
+                                                               "multiplicity": "One",
+                                                               "cmdSwitch": "",
+                                                               "order": 2,
+                                                               "file_info_type_id": "",
+                                                               "file_info_type": "SequenceAlignment",
+                                                               "output_filename": "",
+                                                               "retain": false,
+                                                               "format_id": [],
+                                                               "format": [],
+                                                               "required": true
+                                                      }
+                                             },
+                                             {
+                                                      "id": "852E2BFC-F330-42C0-BA36-91C1A6EBF27D",
+                                                      "name": "-G ",
+                                                      "label": "Select Reference Genome Annotation",
+                                                      "description": "",
+                                                      "type": "Input",
+                                                      "isVisible": true,
+                                                      "value": "",
+                                                      "order": 1,
+                                                      "omit_if_blank": false,
+                                                      "data_object": {
+                                                               "id": "293CBB73-E66F-463B-A03B-D4C6CFE265C5",
+                                                               "name": "Select Reference Genome Annotation",
+                                                               "label": "Select Reference Genome Annotation",
+                                                               "description": "",
+                                                               "type": "Input",
+                                                               "isVisible": true,
+                                                               "multiplicity": "One",
+                                                               "cmdSwitch": "-G ",
+                                                               "order": 1,
+                                                               "file_info_type_id": "",
+                                                               "file_info_type": "ReferenceAnnotation",
+                                                               "output_filename": "",
+                                                               "retain": false,
+                                                               "format_id": [],
+                                                               "format": [],
+                                                               "required": true
+                                                      }
+                                             },
+                                             {
+                                                      "id": "2E54ABAA-02F3-4114-8A04-31F7DB00727F",
+                                                      "name": "--mask-file ",
+                                                      "label": "Provide an optional GTF/GFF \"mask file\"",
+                                                      "description": "",
+                                                      "type": "Input",
+                                                      "isVisible": true,
+                                                      "value": "",
+                                                      "order": -1,
+                                                      "omit_if_blank": false,
+                                                      "data_object": {
+                                                               "id": "D8CFD0AC-BE5C-4A8A-8D67-8645C0FB437C",
+                                                               "name": "Provide an optional GTF/GFF \"mask file\"",
+                                                               "label": "Provide an optional GTF/GFF \"mask file\"",
+                                                               "description": "",
+                                                               "type": "Input",
+                                                               "isVisible": true,
+                                                               "multiplicity": "One",
+                                                               "cmdSwitch": "--mask-file ",
+                                                               "order": -1,
+                                                               "file_info_type_id": "",
+                                                               "file_info_type": "GenomicAnnotation",
+                                                               "output_filename": "",
+                                                               "retain": false,
+                                                               "format_id": [],
+                                                               "format": [],
+                                                               "required": false
+                                                      }
+                                             }
+                                    ]
+                           },
+                           {
+                                    "id": "FC9F5275-D10E-6EA4-2675-6754DC3A92C1",
+                                    "name": "",
+                                    "label": "General Options",
+                                    "description": "",
+                                    "type": "",
+                                    "isVisible": true,
+                                    "groups": [],
+                                    "properties": [
+                                             {
+                                                      "id": "677B7DE4-4D29-B8F4-C8CA-1B569FB059F8",
+                                                      "name": "--multi-read-correct ",
+                                                      "label": "Pre-correct for multiple reads",
+                                                      "description": "",
+                                                      "type": "Flag",
+                                                      "isVisible": true,
+                                                      "value": "false",
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "3D072C76-7C2E-EF8F-3656-A1FA3FAD59EE",
+                                                      "name": "--num-threads ",
+                                                      "label": "Threads",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": false,
+                                                      "value": "6",
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "72F1A34A-5FC0-5F7C-14E2-9326C2B55EEE",
+                                                      "name": "--no-update-check ",
+                                                      "label": "Turn off update checking",
+                                                      "description": "",
+                                                      "type": "Flag",
+                                                      "isVisible": false,
+                                                      "value": "true",
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             }
+                                    ]
+                           },
+                           {
+                                    "id": "5BB8186A-4D14-B275-A0EB-69C8C05E22F7",
+                                    "name": "",
+                                    "label": "Abundance Estimation Options",
+                                    "description": "",
+                                    "type": "",
+                                    "isVisible": true,
+                                    "groups": [],
+                                    "properties": [
+                                             {
+                                                      "id": "4F7A0C28-FA7E-29E3-92C9-4899DF5C03F4",
+                                                      "name": "--upper-quartile-norm ",
+                                                      "label": "Normalize by the upper quartile of the number of fragments mapping to individual loci",
+                                                      "description": "",
+                                                      "type": "Flag",
+                                                      "isVisible": true,
+                                                      "value": "false",
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "9FFFDCD5-EB9D-1FE0-D33B-3FF7F3844121",
+                                                      "name": "--num-importance-samples ",
+                                                      "label": "Number of importance samples generated for each locus during abundance estimation",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "1000",
+                                                      "validator": {
+                                                               "id": "v188f97f98e754d98a2434142d57d9f5c",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "8CE05570-88BA-33DC-4934-B1CD24E5E1C1",
+                                                      "name": "--max-mle-iterations ",
+                                                      "label": "Number of iterations allowed during MLE of abundances",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "5000",
+                                                      "validator": {
+                                                               "id": "v3201ac9420f14d5787355c98119c9465",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             }
+                                    ]
+                           },
+                           {
+                                    "id": "2B639E53-620F-E460-DCA7-426B3567A4C6",
+                                    "name": "",
+                                    "label": "Assembly Options",
+                                    "description": "",
+                                    "type": "",
+                                    "isVisible": true,
+                                    "groups": [],
+                                    "properties": [
+                                             {
+                                                      "id": "98580869-FBBA-7155-929D-866F1418410F",
+                                                      "name": "--label ",
+                                                      "label": "Prefix for transcripts in reported GTF",
+                                                      "description": "",
+                                                      "type": "Text",
+                                                      "isVisible": true,
+                                                      "value": "CUFF",
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "FA67FED8-1495-0157-A6AE-BF5F61359047",
+                                                      "name": "--min-isoform-fraction ",
+                                                      "label": "Minimum isoform fraction",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "0.1",
+                                                      "validator": {
+                                                               "id": "v8f038e339e4e45ecb75d85a0234da1dc",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "DoubleRange": [
+                                                                                          0,
+                                                                                          1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "6274100D-E7EF-7B84-76D8-223FED80D71A",
+                                                      "name": "--pre-mrna-fraction ",
+                                                      "label": "Pre-mRNA fraction",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "0.15",
+                                                      "validator": {
+                                                               "id": "v9fa45de8378f42c49d156505f90a98cd",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "DoubleRange": [
+                                                                                          0,
+                                                                                          1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "3E2A6149-6EDE-330D-1765-019E54E858A0",
+                                                      "name": "--max-intron-length ",
+                                                      "label": "Maximum intron length",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "300000",
+                                                      "validator": {
+                                                               "id": "vebce4d8422ab44969b732785fdfefe33",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "4ADDE6CF-8AA2-8CDB-88FC-BF556674CA0B",
+                                                      "name": "--junc-alpha ",
+                                                      "label": "Alpha value for the binomial test used during false positive spliced alignment filtration",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "0.001",
+                                                      "validator": {
+                                                               "id": "vd7b2dea9feef4c3c813f6a3efc5ac789",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "DoubleRange": [
+                                                                                          0,
+                                                                                          1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "BDEE37B8-F0E3-35D1-A8E3-938AD9EC1897",
+                                                      "name": "--small-anchor-fraction ",
+                                                      "label": "Small anchor fraction",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "0.09",
+                                                      "validator": {
+                                                               "id": "vac9f32effeae4f77bf987653b063f923",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "DoubleRange": [
+                                                                                          0,
+                                                                                          1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "94253EFD-39F8-CE0D-FA2E-8E4842A9B779",
+                                                      "name": "--min-frags-per-transfrag ",
+                                                      "label": "Minimum fragments per transfrag",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "10",
+                                                      "validator": {
+                                                               "id": "v0a9f46789b7241adaaa01edc26b1abb3",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          -1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "2393EE60-D753-712A-A2E0-BDE97322A89A",
+                                                      "name": "--overhang-tolerance ",
+                                                      "label": "The number of bp allowed to enter the intron of a transcript when determining if a read or another transcript is mappable with it",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "8",
+                                                      "validator": {
+                                                               "id": "vf2b67139bd474987849afa8ad26f1362",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          -1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "2F63C30A-4134-9CD4-9876-EAD1D91B7867",
+                                                      "name": "--max-bundle-length ",
+                                                      "label": "Maximum genomic length allowed for a given bundle",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "3500000",
+                                                      "validator": {
+                                                               "id": "v434a2aee728e470d94a0b631dc535b45",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "659BDE97-ED58-2EB0-BB01-F9E5AB7EAB29",
+                                                      "name": "--min-intron-length ",
+                                                      "label": "Minimum intron length",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "50",
+                                                      "validator": {
+                                                               "id": "v672f45df710d430890ecf4a0c17613a4",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "98FE2369-7A72-4E86-4916-4A65B63A7A89",
+                                                      "name": "--trim-3-avgcov-thresh ",
+                                                      "label": "Minimum average coverage required to attempt 3' trimming",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "10",
+                                                      "validator": {
+                                                               "id": "vd50e87f8c0a543db95c271f0f1b11f75",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "IntAbove": [
+                                                                                          0
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             },
+                                             {
+                                                      "id": "3DFAA653-BE36-4BD0-7138-D984C9EC3C87",
+                                                      "name": "--trim-3-dropoff-frac ",
+                                                      "label": "The fraction of average coverage below which to trim the 3' end of an assembled transcript",
+                                                      "description": "",
+                                                      "type": "Number",
+                                                      "isVisible": true,
+                                                      "value": "0.1",
+                                                      "validator": {
+                                                               "id": "vc61fcdd354734671a1b0855f580eb606",
+                                                               "name": "",
+                                                               "label": "",
+                                                               "description": "",
+                                                               "type": "",
+                                                               "isVisible": true,
+                                                               "required": true,
+                                                               "rules": [
+                                                                        {
+                                                                                 "DoubleRange": [
+                                                                                          0,
+                                                                                          1
+                                                                                 ]
+                                                                        }
+                                                               ]
+                                                      },
+                                                      "order": -1,
+                                                      "omit_if_blank": false
+                                             }
+                                    ]
+                           }
+                  ]
+         },
+         "user": "vaughn",
+         "implementation": {
+                  "implementor_email": "vaughn@tacc.utexas.edu",
+                  "implementor": "vaughn",
+                  "test": {
+                           "params": []
+                  }
+         },
+         "full_username": "vaughn@iplantcollaborative.org",
+         "is_publishable": true
+}
